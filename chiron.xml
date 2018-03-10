@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    
+  <!-- chiron customization -->
+  <remove-project name="LineageOS/android_hardware_qcom_audio" revision="staging/lineage-15.1-caf-8998" />
+  <project path="hardware/qcom/audio-caf/msm8998" name="RR-oreo-chiron/hardware_qcom_audio" remote="github" groups="qcom,qcom_audio,pdk" revision="rr-8.1-msm8998-caf" />
+  <remove-project name="LineageOS/android_frameworks_av"/>
+  <project path="frameworks/av" name="RR-oreo-chiron/frameworks_av" remote="github" revision="rr-8.1" />
+  <remove-project name="frameworks_native"/>
+  <project path="frameworks/native" name="RR-oreo-chiron/frameworks_native" remote="github" revision="rr-8.1" />
+  <remove-project name="LineageOS/android_hardware_interfaces"/>
+  <project path="hardware/interfaces" name="RR-oreo-chiron/hardware_interfaces" remote="github" revision="rr-8.1" />
+  
+  <project path="vendor/xiaomi/chiron" name="RR-oreo-chiron/vendor_xiaomi_chiron" remote="github" revision="rr-8.1" />
+  <project path="device/xiaomi/chiron" name="RR-oreo-chiron/device_xiaomi_chiron" remote="github" revision="rr-8.1" />
+  <project path="kernel/xiaomi/msm8998" name="RR-oreo-chiron/kernel_xiaomi_msm8998" remote="github" revision="oreo" />
+  <!-- End of chiron customization -->
+  
+  <!-- Needed repos -->
+  <project path="device/qcom/common" name="LineageOS/android_device_qcom_common" remote="github" />
+  <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" />  
+  <!-- End of needed repos -->
+  
+  <!-- ROM customization -->
+  <remove-project name="ResurrectionRemix/android_frameworks_base" />
+  <project path="frameworks/base" name="RR-oreo-chiron/frameworks_base" remote="github" revision="rr-8.1" />
+  
+  <remove-project name="ResurrectionRemix/Resurrection_packages_apps_Settings" />
+  <project path="packages/apps/Settings" name="RR-oreo-chiron/packages_apps_Settings" remote="github" revision="rr-8.1" />
+  <!-- End of ROM customization -->
+</manifest>
